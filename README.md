@@ -29,9 +29,9 @@
 
 -----
 
-### `—◉ 👾 ACTIVAR EN TERMUX 👾` 
+### `—◉ 👾 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 👾` 
 - [ ⚠ ] NO DISPONIBLE POR EL MOMENTO [ ⚠ ]
-- ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+- 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 ```bash
 > cd
 > termux-setup-storage
@@ -49,17 +49,17 @@
 > npm start
 ```
 
-### `—◉ ✔️ ACTIVAR EN CASO DE DETENERSE ✔️`
+### `—◉ ✔️ 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐄𝐍 𝐂𝐀𝐒𝐎 𝐃𝐄 𝐃𝐄𝐓𝐄𝐍𝐄𝐑𝐒𝐄 ✔️`
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 > cd 
 > cd TheMystic-Bot-MD
 > npm start
 ```
 
-### `—◉ 👽 OBTENER OTRO CODIGO QR 👽`
+### `—◉ 👽 𝐎𝐁𝐓𝐄𝐍𝐄𝐑 𝐎𝐓𝐑𝐎 𝐂𝐎𝐃𝐈𝐆𝐎 𝐐𝐑  👽`
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 > cd 
 > cd TheMystic-Bot-MD
 > rm -rf session.data.json
@@ -90,7 +90,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 -----
 
-### `—◉ 📝 NOTAS 📝`
+### `—◉ 📝 𝐍𝐎𝐓𝐀 📝`
 ```bash
 - ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
 - SI VAS A EDITAR POR COMPLETO DEJA LOS CREDITOS DEL BOT 
