@@ -73,20 +73,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm start
 ```
 
-### `—◉ 🔥 ACTIVAR EN BOXMINEHOST 🔥`
-<a href="https://boxmineworld.com"><img src="https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/Pre%20Bot%20Publi.png" width="450" height="240" alt="JPG"/></a>
-- Pagina Oficial: [https://boxmineworld.com](https://boxmineworld.com)
-- Dashboard: [https://dash.boxmineworld.com](https://dash.boxmineworld.com)
-- Panel: [https://panel.boxmineworld.com](https://panel.boxmineworld.com)
-- Tutorial: [https://youtu.be/eC9TfKICpcY](https://youtu.be/eC9TfKICpcY)
-- Dudas UNICAMENTE SOBRE EL HOST: [https://discord.gg/84qsr4v](https://discord.gg/84qsr4v) (Preguntar por Vicemi)
-  
-### `—◉ 💥 ACTIVAR EN ACIDICNODES 💥`
-<a href="https://billing.acidicnodes.ml/register?ref=ADII104p"><img src="https://billing.acidicnodes.ml/storage/icon.png" width="100" height="100" alt="acidicnodes"/></a>
-- TUTORIAL: [https://youtu.be/nbjvreJ0tUk](https://youtu.be/nbjvreJ0tUk)
-- PAGINA: [https://billing.acidicnodes.ml/register?ref=ADII104p](https://billing.acidicnodes.ml/register?ref=ADII104p)
-- SOPORTE: [https://whatsapp.acidicnodes.com](https://whatsapp.acidicnodes.com)
-
 ### `—◉ 📝 NOTAS 📝`
 ```bash
 - ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
@@ -103,7 +89,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 <a href="https://github.com/ferhacks"><img src="https://github.com/ferhacks.png" width="200" height="200" alt="ferhacks"/></a>
 <a href="https://github.com/g4tito"><img src="https://github.com/g4tito.png" width="200" height="200" alt="g4tito"/></a>
 
-## `EDITOR Y PORPIETARIO DEL BOT` 
-<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="300" height="300" alt="BrunoSobrino"/></a>
+## `𝐄𝐃𝐈𝐓𝐎𝐑 𝐘 𝐏𝐎𝐑𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓` 
+<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
 
 `TheMystic-Bot-MD _ By Bruno Sobrino`
