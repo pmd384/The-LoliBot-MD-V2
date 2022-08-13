@@ -83,13 +83,12 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - THE SHADOW BROKERS - TEAM NO SE HACE RESPONSABLE DEL USO, NUMEROS, PRIVACIDAD Y CONTENIDO MANDADO, USADO O GESTIONADO POR USTEDES O EL BOT
 ```
 
-## `COLABORADORES DEL BOT` 
-<a href="https://github.com/unptoadrih15"><img src="https://github.com/unptoadrih15.png" width="200" height="200" alt="unptoadrih15"/></a>
-<a href="https://github.com/ALBERTO9883"><img src="https://github.com/ALBERTO9883.png" width="200" height="200" alt="ALBERTO9883"/></a>
-<a href="https://github.com/ferhacks"><img src="https://github.com/ferhacks.png" width="200" height="200" alt="ferhacks"/></a>
-<a href="https://github.com/g4tito"><img src="https://github.com/g4tito.png" width="200" height="200" alt="g4tito"/></a>
-
 ## `𝐄𝐃𝐈𝐓𝐎𝐑 𝐘 𝐏𝐎𝐑𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓` 
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
 
-`TheMystic-Bot-MD _ By Bruno Sobrino`
+`The LoliBot-MD _ By el rebelde`
+
+----
+
+### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
+[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
