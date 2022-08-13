@@ -7,7 +7,7 @@ import fs from 'fs'
 global.owner = [
   ['5492266466080', '👑 loliBot - Creador 👑', true],
   ['573183650526', '👑 bot - ofc 1 👑', true],
-  ['972529277406', '👑 bot - ofc 2 👑', true],
+  ['972529277479', '👑 bot - ofc 2 👑', true],
   ['50495745934'],
 ] // Cambia los numeros que quieras
 global.suittag = ['972529277406'] 
