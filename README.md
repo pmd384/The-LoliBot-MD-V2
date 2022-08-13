@@ -90,6 +90,11 @@
 
 -----
 
+### `—◉ 🖍 LETRA DEL BOT 🖍`
+- PAGINA USADA PARA LA LETRA [Aqui](https://smiley.cool/es/weirdmaker.php)
+
+-----
+
 ### `—◉ 📝 𝐍𝐎𝐓𝐀 📝`
 ```bash
 - ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
