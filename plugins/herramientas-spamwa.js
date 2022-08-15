@@ -18,5 +18,6 @@ handler.command = /^spam(wa)?$/i
 handler.group = false
 handler.premium = false
 handler.private = true
-handler.limit = true
+handler.register = true
+handler.limit = 80
 export default handler

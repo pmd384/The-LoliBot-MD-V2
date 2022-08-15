@@ -23,5 +23,7 @@ conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage',
 handler.help = ['gitclone <url>']
 handler.tags = ['downloader']
 handler.command = /gitclone|clonarepo|clonarrepo|repoclonar/i
+handler.register = true
+handler.limit = 1
 handler.exp = 59
 export default handler

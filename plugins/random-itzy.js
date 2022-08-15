@@ -9,4 +9,5 @@ conn.sendButton(m.chat, `_${command}_`, author, mystic, [['🔄 𝚂𝙸𝙶𝚄
 handler.help = ['itzy','kpopitzy']
 handler.tags = ['internet']
 handler.command = /^(itzy|kpopitzy)$/i
+handler.register = true
 export default handler

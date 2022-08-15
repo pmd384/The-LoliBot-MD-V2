@@ -164,7 +164,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-Loli
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(hornymenu)$/i
-//handler.register = true
+handler.register = true
 handler.exp = 70
 export default handler
 

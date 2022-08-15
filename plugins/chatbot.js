@@ -12,7 +12,7 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 
 }
 
-if (/^mande porno$/i.test(m.text) ) { //sem prefixo
+if (/^mande porno|porno$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `𝑨𝒔𝒊́ 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒉𝒂𝒈𝒂 𝒑𝒖𝒕𝒊𝒕𝒐 🧐`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }

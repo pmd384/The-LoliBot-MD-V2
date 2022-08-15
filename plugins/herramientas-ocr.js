@@ -12,4 +12,5 @@ m.reply(json?.ParsedResults?.[0]?.ParsedText)
 } else throw '*[❗] ERROR, POR FAVOR VUELVE A INTENTARLO, NO OLVIDE RESPONDER A UNA IMAGEN*'
 }
 handler.command = /^ocr|totexto$/i
+handler.register = true
 export default handler

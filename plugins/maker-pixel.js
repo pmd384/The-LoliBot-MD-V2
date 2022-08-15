@@ -9,4 +9,5 @@ username: conn.getName(m.sender)
 handler.help = ['pixel','difuminar']
 handler.tags = ['maker']
 handler.command = /^(pixel|pixelar|difuminar)$/i
+handler.register = true
 export default handler

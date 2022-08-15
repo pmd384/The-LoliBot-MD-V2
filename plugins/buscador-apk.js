@@ -121,4 +121,5 @@ await conn.sendFile(m.chat, link, 'error.mp3', caption, m)}
 
 }
 handler.command = ['apkdone', 'apkgoogle', 'apkmody', 'apkshub', 'happymod', 'hostapk', 'revdl', 'toraccino', 'uapkpro']
+handler.register = true
 export default handler

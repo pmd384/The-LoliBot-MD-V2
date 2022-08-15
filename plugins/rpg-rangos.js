@@ -132,8 +132,9 @@ conn.sendHydrated(m.chat, menu, `𝚁𝙰𝙽𝙶𝙾 | ${wm}`, pp, 'https://git
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(rol|rango|roles|rangos)$/i
-//handler.register = true
+handler.register = true
 handler.exp = 50
+handler.limit = 1
 export default handler
 
 const more = String.fromCharCode(8206)

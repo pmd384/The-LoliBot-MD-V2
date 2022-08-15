@@ -12,6 +12,7 @@ handler.tags = ['xp']
 handler.command = ['work', 'trabajar']
 handler.fail = null
 handler.exp = 0
+handler.register = true
 export default handler
 
 function msToTime(duration) {

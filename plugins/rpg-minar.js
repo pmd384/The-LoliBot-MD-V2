@@ -24,6 +24,7 @@ handler.tags = ['xp']
 handler.command = ['minar', 'miming', 'mine', 'minarxp', 'minarexp', 'minarexperiencia'] 
 handler.fail = null
 handler.exp = 0
+handler.limit = 1
 export default handler
 
 function msToTime(duration) {

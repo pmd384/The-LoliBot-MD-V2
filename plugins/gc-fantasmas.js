@@ -21,5 +21,4 @@ m.reply(`*[ ⚠ 𝚁𝙴𝚅𝙸𝚂𝙸𝙾𝙽 𝙳𝙴 𝙸𝙽𝙰𝙲𝚃�
 handler.command = /^(verfantasmas|fantasmas|sider)$/i
 handler.admin = true
 handler.botAdmin = true
-handler.rowner = true
 export default handler

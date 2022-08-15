@@ -105,6 +105,7 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|level|gatacoins|coinsgata|coins)$/i
 handler.exp = 10
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

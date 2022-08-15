@@ -63,6 +63,8 @@ ${x[2]} : ${y[2]} : ${z[2]}
 handler.help = ['slot <apuesta>']
 handler.tags = ['game']
 handler.command = ['slot']
+handler.register = true
+handler.limit = 1
 export default handler
 
 function msToTime(duration) {

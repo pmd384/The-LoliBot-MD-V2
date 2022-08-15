@@ -73,6 +73,8 @@ handler.before = async m => {
 handler.help = ['transfer'].map(v => v + ' [tipo] [cantidad] [@tag]')
 handler.tags = ['xp']
 handler.command = ['payxp', 'transfer', 'darxp'] 
+handler.register = true
+handler.limit = 1
 
 handler.disabled = false
 

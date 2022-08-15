@@ -59,4 +59,5 @@ handler.tags = ['owner']
 handler.command = /^(cajafuerte)$/i
 handler.rowner = true
 handler.fail = null
+handler.register = true
 export default handler

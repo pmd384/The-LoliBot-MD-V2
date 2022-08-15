@@ -52,4 +52,5 @@ handler.before = function (m, text) {
     return true
 }
 
+handler.register = true
 export default handler

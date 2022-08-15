@@ -20,4 +20,5 @@ await conn.sendHydrated(m.chat, wm, `𝑷𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓�
 handler.help = ['bal']
 handler.tags = ['xp']
 handler.command = ['bal2', 'cartera', 'wallet', 'cartera2', 'balance2'] 
+handler.limit = 1
 export default handler

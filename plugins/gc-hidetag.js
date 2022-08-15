@@ -11,5 +11,4 @@ handler.tags = ['group']
 handler.command = /^(hidetag|notificar)$/i
 handler.group = true
 handler.admin = true
-handler.rowner = true
 export default handler
