@@ -1,21 +1,20 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
-import fs from 'fs'
 
-
+//⊱ ━━━━━.⋅ owner/propietario del bot  ⋅.━━━━ ⊰
 global.owner = [
-  ['5492266466080', '👑 loliBot - Creador 👑', true],
-  ['573183650526', '👑 bot - ofc 1 👑', true],
-  ['972529277479', '👑 bot - ofc 2 👑', true],
-  ['50495745934'],
-] // Cambia los numeros que quieras
-global.suittag = ['972529277406'] 
+  ['5492266466080', 'creador', true],
+  ['573183650526'],
+  ['972529277479'], //numero del owner
+]
+//aqui poner los numero premium 
 global.mods = [] 
-global.prems = [] 
+global.prems = ['50495745934'], 
 
-global.APIs = { // API Prefix
-  // name: 'https://website'
+global.APIs = { // API Prefix.
+  
+//⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
   amel: 'https://melcanz.com',
   bx: 'https://bx-hunter.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -42,11 +41,11 @@ global.APIs = { // API Prefix
   neoxr: 'https://neoxr-api.herokuapp.com',
   ana: 'https://anabotofc.herokuapp.com/',
   kanx: 'https://kannxapi.herokuapp.com/',
-  dhnjing: 'https://dhnjing.xyz',
-  violetics: 'https://violetics.pw'
+  dhnjing: 'https://dhnjing.xyz'
 },
+  
 global.APIKeys = { // APIKey Here
-  // 'https://website': 'apikey'
+  //⊱ ━━━━━.⋅ 'https://website': 'apikey' ⋅.━━━━ ⊰
   'https://api-alc.herokuapp.com': 'ConfuMods',
   'https://api.reysekha.xyz': 'apirey',
   'https://melcanz.com': 'F3bOrWzY',
@@ -62,29 +61,73 @@ global.APIKeys = { // APIKey Here
   'https://api.lolhuman.xyz': '9b817532fadff8fc7cb86862',
   'https://botstyle-api.herokuapp.com': 'Eyar749L',
   'https://neoxr-api.herokuapp.com': 'yntkts',
-  'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://violetics.pw': 'beta'
+  'https://anabotofc.herokuapp.com/': 'AnaBot'
 }
 
-// Sticker WM
-global.packname = 'toma tu stickers'
+
+//⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
+
+global.packname = 'toma tu sticker'
 global.author = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 
+//⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
+
+global.vs = '1.1.5'
+global.version = vs
+
+global.gt = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
+global.gatabot = gt
+
+global.yt = 'https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw'
+global.youtube = yt
+
+global.ig = ''
+global.gatadiosig = ig
+
+global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
+global.gatabot = md
+
+global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
+global.nngrupo = nn
+
+global.nnn = 'https://chat.whatsapp.com/JQ3rJOqDDPG8PvCYPH6EXz'
+global.nnngrupo = nnn
+
+global.paypal = 'https://www.instagram.com'
+global.donar = paypal
+
+
+//⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
+global.rg = '╰⊱✅⊱ *𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐* ⊱✅⊱╮\n\n'
+global.resultado = rg
+
+global.ag = '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n'
+global.advertencia = ag
+
+global.iig = '╰⊱❕⊱ *𝑰𝒏𝒇𝒐𝒎𝒂𝒄𝒊𝒐𝒏* ⊱❕⊱╮\n\n'
+global.informacion = iig
+
+global.fg = '╰⊱❌⊱ *𝑭𝒂𝒍𝒍𝒐 | 𝒆𝒓𝒓𝒐𝒓* ⊱❌⊱╮\n\n'
+global.fallo = fg
+
+global.mg = '╰⊱❗️⊱ *𝑳𝒐 𝒖𝒔𝒐 𝒎𝒂𝒍* ⊱❗️⊱╮\n\n'
+global.mal = mg
+
+global.eeg = '╰⊱📩⊱ *𝑹𝒆𝒑𝒐𝒓𝒕𝒆* ⊱📩⊱╮\n\n'
+global.envio = eeg
+
+global.eg = '╰⊱💚⊱ *𝑬𝒙𝒊𝒕𝒐𝒔* ⊱💚⊱╮\n\n'
+global.exito = eg
+
+//⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
+
 global.wm = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
-global.igfg = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
-global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.igfg = 'The Lolibot-MD'
+global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
-global.imagen1 = fs.readFileSync('./Menu2.jpg')
-global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
-global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
-global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-
-global.lolkeys = ['2e0da1f78d1721134b21816d', '902c3bc9d8c08b0dcf8f5373', '808693688ecc695293359089', '85faf717d0545d14074659ad']
-global.lolkeysapi = lolkeys[Math.floor(lolkeys.length * Math.random())]
-
-global.multiplier = 9999 
+global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel
 
 global.rpg = {
   emoticon(string) {

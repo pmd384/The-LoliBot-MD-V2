@@ -41,29 +41,151 @@ export async function handler(chatUpdate) {
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
             if (user) {
-                if (!isNumber(user.exp)) user.exp = 0
-                if (!isNumber(user.limit)) user.limit = 10
-                if (!isNumber(user.lastclaim)) user.lastclaim = 0
-                if (!('registered' in user)) user.registered = false
-              if (!user.registered) {
-                if (!('name' in user)) user.name = m.name
-                if (!isNumber(user.age)) user.age = -1
-                if (!isNumber(user.regTime)) user.regTime = -1
-               }
-                if (!isNumber(user.afk)) user.afk = -1
-                if (!('afkReason' in user)) user.afkReason = ''
-                if (!('banned' in user)) user.banned = false
-                if (!isNumber(user.level)) user.level = 0
-                if (!('role' in user)) user.role = 'Novato'
-                if (!('autolevelup' in user)) user.autolevelup = true
-                if (!isNumber(user.money)) user.money = 0
-                if (!isNumber(user.limit)) user.limit = 10
-                if (!isNumber(user.lastclaim)) user.lastclaim = 0
+                if (!isNumber(user.exp))
+                    user.exp = 0
+                if (!isNumber(user.limit))
+                    user.limit = 20
+		    if (!isNumber(user.joincount)) 
+			    user.joincount = 1
+                if (!isNumber(user.lastclaim))
+                    user.lastclaim = 0
+		if (!isNumber(user.lastcofre))
+                    user.lastcofre = 0
+                if (!('registered' in user))
+                    user.registered = false
+                if (!user.registered) {
+                    if (!('name' in user))
+                        user.name = m.name
+                    if (!isNumber(user.age))
+                        user.age = -1
+                    if (!isNumber(user.regTime))
+                        user.regTime = -1
+	            
+                }
+                if (!isNumber(user.afk))
+                    user.afk = -1
+                if (!('afkReason' in user))
+                    user.afkReason = ''
+                if (!('banned' in user))
+                    user.banned = false
+                if (!isNumber(user.warn))
+                    user.warn = 0
+                if (!isNumber(user.level))
+                    user.level = 0
+                if (!('role' in user))
+                    user.role = 'Novato'
+                if (!('autolevelup' in user)) 
+                    user.autolevelup = false
+                
+
+                if (!isNumber(user.money))
+                    user.money = 0
+                if (!isNumber(user.health))
+                    user.health = 100
+                if (!isNumber(user.limit))
+                    user.limit = 10
+                if (!isNumber(user.potion))
+                    user.potion = 0
+                if (!isNumber(user.trash))
+                    user.trash = 0
+                if (!isNumber(user.wood))
+                    user.wood = 0
+                if (!isNumber(user.rock))
+                    user.rock = 0
+                if (!isNumber(user.string))
+                    user.string = 0
+                if (!isNumber(user.petFood))
+                    user.petFood = 0
+
+                if (!isNumber(user.emerald))
+                    user.emerald = 0
+                if (!isNumber(user.diamond))
+                    user.diamond = 0
+                if (!isNumber(user.gold))
+                    user.gold = 0
+                if (!isNumber(user.iron))
+                    user.iron = 0
+
+                if (!isNumber(user.common))
+                    user.common = 0
+                if (!isNumber(user.uncommon))
+                    user.uncommon = 0
+                if (!isNumber(user.mythic))
+                    user.mythic = 0
+                if (!isNumber(user.legendary))
+                    user.legendary = 0
+                if (!isNumber(user.pet))
+                    user.pet = 0
+
+                if (!isNumber(user.horse))
+                    user.horse = 0
+                if (!isNumber(user.horseexp))
+                    user.horseexp = 0
+                if (!isNumber(user.cat))
+                    user.cat = 0
+                if (!isNumber(user.catexp))
+                    user.catexp = 0
+                if (!isNumber(user.fox))
+                    user.fox = 0
+                if (!isNumber(user.foxhexp))
+                    user.foxexp = 0
+                if (!isNumber(user.dog))
+                    user.dog = 0
+                if (!isNumber(user.dogexp))
+                    user.dogexp = 0
+
+                if (!isNumber(user.horselastfeed))
+                    user.horselastfeed = 0
+                if (!isNumber(user.catlastfeed))
+                    user.catlastfeed = 0
+                if (!isNumber(user.foxlastfeed))
+                    user.foxlastfeed = 0
+                if (!isNumber(user.doglastfeed))
+                    user.doglastfeed = 0
+
+                if (!isNumber(user.armor))
+                    user.armor = 0
+                if (!isNumber(user.armordurability))
+                    user.armordurability = 0
+                if (!isNumber(user.sword))
+                    user.sword = 0
+                if (!isNumber(user.sworddurability))
+                    user.sworddurability = 0
+                if (!isNumber(user.pickaxe))
+                    user.pickaxe = 0
+                if (!isNumber(user.pickaxedurability))
+                    user.pickaxedurability = 0
+                if (!isNumber(user.fishingrod))
+                    user.fishingrod = 0
+                if (!isNumber(user.fishingroddurability))
+                    user.fishingroddurability = 0
+
+                if (!isNumber(user.lastclaim))
+                    user.lastclaim = 0
+		if (!isNumber(user.lastcofre))
+                    user.lastcofre = 0
+                if (!isNumber(user.lastadventure))
+                    user.lastadventure = 0
+                if (!isNumber(user.lastfishing))
+                    user.lastfishing = 0
+                if (!isNumber(user.lastdungeon))
+                    user.lastdungeon = 0
+                if (!isNumber(user.lastduel))
+                    user.lastduel = 0
+                if (!isNumber(user.lastmining))
+                    user.lastmining = 0
+                if (!isNumber(user.lasthunt))
+                    user.lasthunt = 0
+                if (!isNumber(user.lastweekly))
+                    user.lastweekly = 0
+                if (!isNumber(user.lastmonthly))
+                    user.lastmonthly = 0
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 10,
+                    limit: 20,
                     lastclaim: 0,
+		    joincount: 1,
                     registered: false,
                     name: m.name,
                     age: -1,
@@ -71,12 +193,62 @@ export async function handler(chatUpdate) {
                     afk: -1,
                     afkReason: '',
                     banned: false,
+                    warn: 0,
                     level: 0,
                     role: 'Novato',
-                    autolevelup: true,
+                    autolevelup: false,
+
                     money: 0,
-                    limit: 10,
+                    health: 100,
+                    limit: 20,
+                    potion: 10,
+                    trash: 0,
+                    wood: 0,
+                    rock: 0,
+                    string: 0,
+
+                    emerald: 0,
+                    diamond: 0,
+                    gold: 0,
+                    iron: 0,
+
+                    common: 0,
+                    uncommon: 0,
+                    mythic: 0,
+                    legendary: 0,
+                    pet: 0,
+
+                    horse: 0,
+                    horseexp: 0,
+                    cat: 0,
+                    catngexp: 0,
+                    fox: 0,
+                    foxexp: 0,
+                    dog: 0,
+                    dogexp: 0,
+
+                    horselastfeed: 0,
+                    catlastfeed: 0,
+                    foxlastfeed: 0,
+                    doglastfeed: 0,
+
+                    armor: 0,
+                    armordurability: 0,
+                    sword: 0,
+                    sworddurability: 0,
+                    pickaxe: 0,
+                    pickaxedurability: 0,
+                    fishingrod: 0,
+                    fishingroddurability: 0,
+
                     lastclaim: 0,
+		    lastcofre: 0,
+                    lastadventure: 0,
+                    lastfishing: 0,
+                    lastdungeon: 0,
+                    lastduel: 0,
+                    lastmining: 0,
+                    lasthunt: 0,
                     lastweekly: 0,
                     lastmonthly: 0,
                 }
@@ -101,17 +273,21 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat))
                     chat.delete = true
                 if (!('modohorny' in chat))
-                    chat.modohorny = false    
+                    chat.modohorny = false
+                if (!('stickers' in chat))
+                    chat.stickers = false
                 if (!('autosticker' in chat))
-                    chat.autosticker = false                    
+                    chat.autosticker = false  
                 if (!('audios' in chat))
-                    chat.audios = false                            
+                    chat.audios = false 
+		if (!('antiver' in chat))
+                    chat.antiver = true
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('antiLink2' in chat))
                     chat.antiLink2 = false
-                if (!('antiviewonce' in chat))
-                    chat.antiviewonce = false
+                if (!('viewonce' in chat))
+                    chat.viewonce = false
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!isNumber(chat.expired))
@@ -124,14 +300,16 @@ export async function handler(chatUpdate) {
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
-                    sDemote: '',
+                    sDemote: '', 
                     delete: true,
                     modohorny: true,
+                    stickers: true,
                     autosticker: false,
                     audios: true,
+		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
-                    antiviewonce: false,
+                    viewonce: false,
                     antiToxic: false,
                     expired: 0,
                 }
@@ -141,10 +319,12 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
+		if (!('temporal' in settings)) settings.temporal = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
-                restrict: false
+                restrict: false,
+		temporal: false
             }
         } catch (e) {
             console.error(e)
@@ -167,7 +347,7 @@ export async function handler(chatUpdate) {
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-        if (opts['queque'] && m.text && !(isMods || isPrems)) {
+       /* if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
             const previousID = queque[queque.length - 1]
             queque.push(m.id || m.key.id)
@@ -175,6 +355,12 @@ export async function handler(chatUpdate) {
                 if (queque.indexOf(previousID) === -1) clearInterval(this)
                 await delay(time)
             }, time)
+        } */
+        
+        if (opts['queque'] && m.text && !m.fromMe && !(isMods || isPrems)) {
+            const id = m.id
+            this.msgqueque.add(id)
+            await this.msgqueque.waitQueue(id)
         }
 
         if (m.isBaileys)
@@ -213,7 +399,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${name}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${m.text}\n\n*—◉ 𝑬𝒓𝒓𝒐𝒓:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐  #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
+                            m.reply(`*[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${name}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${m.text}\n\n*—◉ 𝑬𝒓𝒓𝒐𝒓:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
                     }
                 }
             }
@@ -329,16 +515,16 @@ export async function handler(chatUpdate) {
                 }
                 m.isCommand = true
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
-                if (xp > 200)
+                if (xp > 2000)
                     m.reply('Ngecit -_-') // Hehehe
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `*[❗𝙄𝙣𝙛𝙤 ❗] 𝑺𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐 𝒑𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒖𝒔𝒂𝒏𝒅𝒐 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐  ${usedPrefix}buy <cantidad>*`, m)
+                    this.reply(m.chat, `[❗𝙄𝙣𝙛𝙤 ❗] 𝑺𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐 𝒑𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒖𝒔𝒂𝒏𝒅𝒐 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐  ${usedPrefix}buy <cantidad>`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `*[❗𝙄𝙣𝙛𝙤 ❗] 𝑺𝒆 𝒓𝒆𝒒𝒖𝒊𝒆𝒓𝒆 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍 ${plugin.level} 𝑷𝒂𝒓𝒂 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐, 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒆𝒔 ${_user.level}*`, m)
+                    this.reply(m.chat, `[❗𝙄𝙣𝙛𝙤 ❗] 𝑺𝒆 𝒓𝒆𝒒𝒖𝒊𝒆𝒓𝒆 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍 ${plugin.level} 𝑷𝒂𝒓𝒂 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐, 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒆𝒔 ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -380,7 +566,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*[ ⚠️  𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${m.plugin}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐  #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
+                                    m.reply(`[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${m.plugin}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐  #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -393,8 +579,6 @@ export async function handler(chatUpdate) {
                             console.error(e)
                         }
                     }
-                    if (m.limit)
-                        m.reply(+m.limit + ' 𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆 💎 𝒖𝒔𝒂𝒅𝒐')
                 }
                 break
             }
@@ -450,8 +634,7 @@ export async function handler(chatUpdate) {
             console.log(m, m.quoted, e)
         }
         if (opts['autoread'])
-            await this.readMessages([m.key])
-        
+            await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
         if (!m.fromMem && m.text.match(/(el rebelde|@5219996125657|@5492266466080|bot|Lolibot|the lolibot - md|lolibot - md|The LoliBot-MD)/gi)) {
         let emot = pickRandom(["🎃", "❤", "😘", "😍", "💕", "😎", "🙌", "⭐", "👻", "🔥"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
@@ -552,7 +735,7 @@ export async function deleteUpdate(message) {
 *■ 𝑷𝒂𝒓𝒂 𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂 𝒆𝒔𝒕𝒂́ 𝒇𝒖𝒏𝒄𝒊𝒐𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐:*
 *—◉ #disable antidelete*
 *—◉ #enable delete*
-━━━━⬣  𝘼𝙣𝙩𝙞 𝙙𝙚𝙡𝙚𝙩𝙚 ⬣━━━━
+━━━━⬣  𝘼𝙣𝙩𝙞 𝙙𝙚𝙡𝙚𝙩𝙚  ⬣━━━━
 `.trim(), msg, {
             mentions: [participant]
         })
@@ -564,18 +747,18 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
-        owner: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
-        mods: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
-        premium: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 𝒑𝒓𝒆𝒎𝒊𝒖𝒎 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
-        group: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒈𝒓𝒖𝒑𝒐',
-        private: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒉𝒂𝒕 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕',
-        admin: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒑𝒐𝒓 𝒂𝒅𝒎𝒊𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐',
-        botAdmin: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒍 𝒃𝒐𝒕 (𝒚𝒐) 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒂𝒅𝒎𝒊𝒏, 𝒉𝒂𝒈𝒂 𝒒𝒖𝒆 𝒃𝒐𝒕 𝒔𝒆𝒂 𝒂𝒅𝒎𝒊𝒏 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐',
-        unreg: '*[ 🛑 𝙃𝙚𝙮!!! 𝘼𝙡𝙩𝙤, 𝙣𝙤 𝙚𝙨𝙩𝙖́ 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙙𝙤 🛑 ]*\n\n*—◉ 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒓𝒕𝒆, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒗𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒓',
-        restrict: '*[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒔𝒕𝒓𝒊𝒏𝒈𝒊𝒅𝒐/𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒅𝒆𝒔𝒊𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕'
+        rowner: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
+        owner: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
+        mods: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
+        premium: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 𝒑𝒓𝒆𝒎𝒊𝒖𝒎 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕',
+        group: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒈𝒓𝒖𝒑𝒐',
+        private: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒉𝒂𝒕 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕',
+        admin: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒑𝒐𝒓 𝒂𝒅𝒎𝒊𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐',
+        botAdmin: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒍 𝒃𝒐𝒕 (𝒚𝒐) 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒂𝒅𝒎𝒊𝒏, 𝒉𝒂𝒈𝒂 𝒒𝒖𝒆 𝒃𝒐𝒕 𝒔𝒆𝒂 𝒂𝒅𝒎𝒊𝒏 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐',
+        unreg: '[ 🛑 𝙃𝙚𝙮!!! 𝘼𝙡𝙩𝙤, 𝙣𝙤 𝙚𝙨𝙩𝙖́ 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙙𝙤 🛑 ]*\n\n*—◉ 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒓𝒕𝒆, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒗𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒓',
+        restrict: '[ ⚠️ 𝑨𝑳𝑬𝑹𝑻𝑨 ⚠️ ] 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒔𝒕𝒓𝒊𝒏𝒈𝒊𝒅𝒐/𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒅𝒆𝒔𝒊𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕'
     }[type]
-    if (msg) return m.reply(msg)
+    if (msg) return m.reply(msg) 
 }
 
 let file = global.__filename(import.meta.url, true)
